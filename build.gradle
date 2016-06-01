@@ -20,13 +20,13 @@ apply plugin: 'com.matthewprenger.cursegradle'
 
 version = "1.5.2"
 group= "net.reederhome.colin.mods.JAPTA" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "JAPTA-1.9.4"
+archivesBaseName = "JAPTA-1.9"
 
 minecraft {
-    version = "1.9.4-12.17.0.1917-1.9.4"
+    version = "1.9-12.16.0.1809-1.9"
     runDir = "run"
 
-    mappings = "snapshot_20160524"
+    mappings = "stable_24"
 }
 
 dependencies {

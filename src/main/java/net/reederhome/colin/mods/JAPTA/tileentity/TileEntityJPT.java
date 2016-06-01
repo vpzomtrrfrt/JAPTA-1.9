@@ -46,10 +46,9 @@ public abstract class TileEntityJPT extends TileEntity {
     }
 
     @Override
-    public NBTTagCompound writeToNBT(NBTTagCompound tag) {
-        tag = super.writeToNBT(tag);
+    public void writeToNBT(NBTTagCompound tag) {
+        super.writeToNBT(tag);
         tag.setInteger("Energy", stored);
-        return tag;
     }
 
     @Override

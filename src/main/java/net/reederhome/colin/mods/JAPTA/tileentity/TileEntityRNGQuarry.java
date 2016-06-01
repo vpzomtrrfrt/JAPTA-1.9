@@ -142,14 +142,13 @@ public class TileEntityRNGQuarry extends TileEntityJPT implements IEnergyReceive
     }
 
     @Override
-    public NBTTagCompound writeToNBT(NBTTagCompound tag) {
-        tag = super.writeToNBT(tag);
+    public void writeToNBT(NBTTagCompound tag) {
+        super.writeToNBT(tag);
         if(item != null) {
             NBTTagCompound nbt = new NBTTagCompound();
             item.writeToNBT(nbt);
             tag.setTag("Item", nbt);
         }
-        return tag;
     }
 
     @Override
