@@ -123,12 +123,11 @@ public class TileEntityFluidHopper extends TileEntity implements IFluidHandler, 
     }
 
     @Override
-    public NBTTagCompound writeToNBT(NBTTagCompound tag) {
-        tag = super.writeToNBT(tag);
+    public void writeToNBT(NBTTagCompound tag) {
+        super.writeToNBT(tag);
         if(content != null) {
             tag.setTag("Content", content.writeToNBT(new NBTTagCompound()));
         }
-        return tag;
     }
 
     @Override
